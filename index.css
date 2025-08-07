@@ -1,0 +1,104 @@
+/* CSS */
+    .hamburger {
+      position: fixed;
+      left: 20px;
+      top: 20px;
+      width: 30px;
+      height: 24px;
+      cursor: pointer;
+      z-index: 9999;
+    }
+    
+    .hamburger__line {
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: #ff6600;
+      border-radius: 10px;
+      transition: all 300ms ease;
+      transform: rotate(0deg);
+    }
+    
+    /* 線の位置（通常） */
+    .hamburger__line:nth-child(1) { top: 0px; }
+.hamburger__line:nth-child(2) { top: 10px; }
+.hamburger__line:nth-child(3) { top: 20px; }
+    
+    /* ×変形（2本） */
+    
+    
+    /* ×変形（3本） */
+    
+    .hamburger.open .hamburger__line:nth-child(1) {
+      top: 10px;
+      transform: rotate(45deg);
+    }
+    .hamburger.open .hamburger__line:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.open .hamburger__line:nth-child(3) {
+      top: 10px;
+      transform: rotate(-45deg);
+    }
+    
+    /* メニュー本体 */
+    .menu {
+      flex-direction: column;
+      display: flex;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-20px);
+      transition: all 300ms ease;
+      width: 300px;
+      background-color: #fdff85;
+      color: #333333;
+      padding: 20px;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .menu.open {
+      opacity: 1;
+      transform: translateX(0);
+      visibility: visible;
+    }
+    
+    .menu__item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-decoration: none;
+      font-size: 16px;
+      color: inherit;
+      padding-bottom: 10px;
+      border-bottom: none;
+    }
+    .menu__item:last-child {
+      border-bottom: none;
+    }
+    
+    .icon img {
+      width: 20px;
+      height: 20px;
+      object-fit: contain;
+    }
+    
+    /* アニメーション */
+    
+    /* 左から右 */
+    .slide-left-enter-active,
+    .slide-left-leave-active {
+      
+          transition: all 300ms ease;
+        
+    }
+    .slide-left-enter-from,
+    .slide-left-leave-to {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    .slide-left-enter-to,
+    .slide-left-leave-from {
+      opacity: 1;
+      transform: translateX(0);
+    }
