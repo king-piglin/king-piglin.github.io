@@ -1,4 +1,11 @@
 /* CSS */
+@import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap');
+
+.title {
+  font-family: Eczar;
+  color: #dea300;
+}
+
     .hamburger {
       position: fixed;
       left: 20px;
@@ -101,5 +108,22 @@
     .slide-left-leave-from {
       opacity: 1;
       transform: translateX(0);
-
     }
+
+.container {
+  font-family: arial;
+  font-size: 24px;
+  margin: 25px;
+  width: 95%;
+  height: 30%;
+  /* 準備 */
+  position: relative;
+}
+
+.title {
+  /* 水平・垂直方向の中央揃え */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
