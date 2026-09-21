@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+body {
+  margin: 0px;
+}
+
+p {
+  margin-block-end: 0em;
+}
+
+a {
+  color: inherit;         /* 親要素（周りの文字）と同じ色にする */
+  text-decoration: none;  /* アンダーバー（下線）を消す */
+}
+
 .title {
   font-family: Eczar;
   color: #dea300;
@@ -161,6 +174,8 @@
   text-align: center;
   font-size: 2vw;
   background-color: #b5b5b5;
+  padding-top: 10px;
+  padding-bottom: 10px
 }
 
 .pk {
@@ -171,18 +186,61 @@
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #ff9500;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #ff9500;/*線*/
     border-radius: 10px;/*角の丸み*/
     width: 40vw;
     height: 10vh;
     margin: 0 auto;
+    margin-top: 5%;
 }
 
 .box1 p {
     margin: 0; 
     padding: 0;
+}
+
+.box2 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #ff0000;/*文字色*/
+    background: #FFF;
+    border: solid 3px #ff0000;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    width: 40vw;
+    height: 10vh;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.box2 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.box3 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #00f7ff;/*文字色*/
+    background: #FFF;
+    border: solid 3px #00f7ff;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    width: 40vw;
+    height: 10vh;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.box3 p {
+    margin: 0; 
+    padding: 0;
+}
+
+.content {
+  color: #000000;
 }
 
 .img {
